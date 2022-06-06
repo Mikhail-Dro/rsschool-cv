@@ -9,3 +9,30 @@
 ## ***Education***
 **University:** *Belarusian-Russian University, specialty "Equipment and technology of welding production"*  
   
+  **Courses:**
++ *Coursera "Python programming fundamentals " (in process…)*
++ *Code Basics  "JavaScript for beginners" (in process…)*
++ *Code Basics  "CSS  for beginners " (in process…)*
++ *Code Basics  "HTML for beginners " (completed)*
+## ***Code example***
+*Given a number n, determine the nth Fibonacci number F[n]:*  
+```
+n = int(input())
+if n == 0 or n == 1:
+    print(n)
+elif n > 1:
+    x = 2
+    Fn1 = 1
+    Fn2 = 0
+    Fn = Fn1 + Fn2
+    while x < n:
+        Fn2 = Fn1
+        Fn1 = Fn
+        Fn = Fn1 + Fn2
+        x += 1
+    print(Fn)
+```
+## ***Languages***
++ **Russian** *– native speaker*
++ **French** *– A2 Pre-Intermediate*
++ **English** *– A1 Elementary (A2 Pre-Intermediate in process…)*

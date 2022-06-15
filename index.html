@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,26 +42,29 @@
     </header>
     <main class="main">
       <div class="container main-container">
-        <section class="section-black">
-          <div class="avatar">
-            <img src="ava.png" alt="avatar" id="ava" />
-          </div>
-        </section>
-        <section class="section-white">
+        <section class="section section-profile">
+          <img src="img/ava.png" alt="avatar" id="ava" />
           <div>
             <h1 class="section-title">Mikhail Drobyshevski</h1>
           </div>
         </section>
-        <section class="section-black" id="contacts">
+        <section class="section" id="contacts">
           <h2 class="section-title">Contacts</h2>
           <ul class="text">
             <li>Phone: +375 (29) 544 90 33</li>
             <li>E-mail: drobyshevski.m@gmail.com</li>
             <li>Discord: Mikhail-Dro#8980</li>
-            <li>Linkedin: Mikhail</li>
+            <li>
+              Linkedin:<a
+                href="https://www.linkedin.com/in/mikhail-drobyshevski-654999225"
+                class="ld"
+              >
+                Mikhail</a
+              >
+            </li>
           </ul>
         </section>
-        <section class="section-white" id="about">
+        <section class="section" id="about">
           <h2 class="section-title">About me</h2>
           <p class="text">
             I’ve been working as a process engineer after graduating university.
@@ -72,7 +75,7 @@
             in parallel with my main job.
           </p>
         </section>
-        <section class="section-black" id="skills">
+        <section class="section" id="skills">
           <h2 class="section-title">Skills</h2>
           <ul class="text">
             <li>Basics "CSS for beginners"(in process…)</li>
@@ -81,22 +84,19 @@
             <li>Coursera "Python programming fundamentals" (in process…)</li>
           </ul>
         </section>
-        <section class="section-white" id="code">
+        <section class="section" id="code">
           <h2 class="section-title">Code example</h2>
-          <p class="text">
-            Given a number n, determine the nth Fibonacci number F[n]:
-          </p>
-          <pre>
+          <pre class="code">
                 <code>
                     n = int(input())
                     if n == 0 or n == 1:
                         print(n)
-                    elif n > 1:
+                    elif n &gt; 1:
                         x = 2
                         Fn1 = 1
                         Fn2 = 0
                         Fn = Fn1 + Fn2
-                        while x < n:
+                        while x &lt; n:
                             Fn2 = Fn1
                             Fn1 = Fn
                             Fn = Fn1 + Fn2
@@ -105,7 +105,7 @@
                 </code>
             </pre>
         </section>
-        <section class="section-black" id="languages">
+        <section class="section" id="languages">
           <h2 class="section-title">Languages</h2>
           <ul class="text">
             <li>Russian – native speaker</li>
@@ -113,7 +113,7 @@
             <li>English – A1 Elementary (A2 Pre-Intermediate in process…)</li>
           </ul>
         </section>
-        <section class="section-white" id="education">
+        <section class="section" id="education">
           <h2 class="section-title">Education</h2>
           <p class="text">
             University: Belarusian-Russian University, specialty "Equipment and
@@ -123,8 +123,16 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container footer-conteiner">
-        <p class="text-footer">Текст футера</p>
+      <div class="container foot">
+        <p>© 2022</p>
+        <div class="git">
+          <a href="https://github.com/Mikhail-Dro" class="gh">My github</a>
+        </div>
+        <div class="rss">
+          <a href="https://rs.school/js/"
+            ><img src="img/rs_school.png" width="150" height="50" alt="RSscool"
+          /></a>
+        </div>
       </div>
     </footer>
   </body>

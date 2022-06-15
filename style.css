@@ -1,3 +1,18 @@
+/* Дополнительно */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+@media (max-width: 877px) {
+    .header {
+        display: none;
+    }
+}
+/* Прижимает футер */
 body {
     min-height: 100vh;
     margin: 0px;
@@ -6,33 +21,29 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
+/* Центрирует и ограничивает ширину  */
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 20px;
 }
-
+/* Упорядочивает меню */
 .nav-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-}
-
-.nav-list {
     list-style: none;
-}
-
+  }
+/* Стилизация меню */
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
-}
-
-.nav-link {
     transition: .2s;
-}
+  }
 
 .nav a {
     color: rgb(219, 219, 219);
+    font-style: normal;
     text-decoration: none;  
     transition: color 0.5s;
 }
@@ -42,86 +53,95 @@ body {
     text-decoration: underline;
 }
 
-html {
-    scroll-behavior: smooth; 
-}
-
-body {
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: rgb(50, 50, 50);
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: rgb(0, 0, 0);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-#ava {
-    width: 200px;
-    height: 200px;
-}
-
 .header {
     background-color: rgb(49, 49, 49);
-    text-align: center;
 }
-
-.footer {
-    background-color: rgb(49, 49, 49);
-}
-
-.text-footer {
-    color: rgb(255, 255, 255);
-}
-
+/* Разделяет main пополам  */
 .main-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.section-black {
-    width: 33%;
-}
-
-.section-white {
-    width: 67%;
-}
-
-@media (max-width: 768px) {
-    .section-black {
-        width: 100%;
-    }
-
-    .section-white {
-        width: 100%;
-    }
-
-    .header {
-        display: none;
-    }
-}
-
-.avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.section {
     width: 50%;
+    padding: 20px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid rgb(39, 95, 121);
+}
+/* При сужении до 768px секции становятся 100% */
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+/* Работа над секцией profile */
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 5px solid rgb(39, 95, 121);
+}
+/* Стилизация шрифтов */
+body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+    color: rgb(50, 50, 50);
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(39, 95, 121);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(39, 95, 121);
+}
+
+.code {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+}
+/* Стилизация картинок */
+#ava {
+    width: 200px;
+    height: 200px;
+}
+
+.footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-style: normal;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+.gh {
+    color: white;
+}
+
+.ld {
+    color: rgb(49, 49, 49);
+}
+
+.git {
+    padding: 40px;
+}
